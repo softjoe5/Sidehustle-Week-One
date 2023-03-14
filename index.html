@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Form</title>
+</head>
+<body>
+
+    <form onsubmit="event.preventDefault()">
+
+        <fieldset id="fieldset">
+            
+        <!-- Name -->
+        <label for="name">Name</label>
+        <input type="text" name="name" value="" id="name" required>
+        <br> <br>
+        <!-- Email -->
+        <label for="email">Email</label>
+        <input type="email" name="email" placeholder="sophie@example.com" id="email" value="" required>
+        <br> <br>
+        <!-- Phone Number -->
+        <label for="tel">Phone Number</label>
+        <input type="tel" name="tel" value="" id="phone number" required>
+        <br> <br>
+        <!-- Male -->
+        <label for="male">Male</label>
+        <input type="radio" name="male" id="male" value="">
+         <!-- Male -->
+         <label for="female">Female</label>
+         <input type="radio" name="female" id="female" value="">
+         <br> <br>
+          <!-- Password -->
+          <label for="password">Password</label>
+          <input type="password" name="password" id="password" value="" required>
+          
+          <br> <br>
+
+          <button onclick="alert('Form was submitted sucessfully')">Submit</button>
+
+    
+    </fieldset>
+
+    </form>
+    
+
+    <style>
+        body {
+                text-align: center;
+                padding-top: 100px;
+            
+            }
+
+            #fieldset {
+                padding-top: 60px;
+                background-color: aqua;
+                border: none;
+                width: 300px;
+                height: 300px;
+
+            }
+
+            .submit {
+                background-color: rgb(54, 70, 129);
+                border-radius: 10px;
+                color: white;
+                width: 30%;
+                
+            }
+
+            h1 {
+                color: red;
+            }
+    </style>
+
+    
+    <script src="index.js"></script>
+</body>
+</html>
